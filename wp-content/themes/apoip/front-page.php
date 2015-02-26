@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Grid Page
+ * Front page template for the AP-OIP site
  *
  * @package apoip
  */
@@ -48,6 +48,56 @@ get_header(); ?>
 
 	<div id="quaternary" class="grid-area">
 		<div class="grid-wrapper clear">
+
+		<?php
+			$category_name = 'Innovations';
+
+			$args = array(
+				'posts_per_page'   => 1,
+				'offset'           => 0,
+				'category_name'    => $category_name,
+				'orderby'          => 'post_date',
+				'order'            => 'DESC',
+				'post_status'      => 'publish',
+				);
+			$category_posts = get_posts( $args );
+
+			if (sizeof( $category_posts ) > 0) {
+			   set_query_var( 'category_name', $category_name );
+			   foreach ( $category_posts as $post ) : setup_postdata( $post ); ?>
+			   	<div class="grid">
+				     <?php get_template_part( 'content', 'stream' ); ?>
+				</div><!-- .grid -->
+			<?php endforeach;
+			}
+
+			wp_reset_postdata();
+		?>
+
+		<?php
+			$category_name = 'News';
+
+			$args = array(
+				'posts_per_page'   => 1,
+				'offset'           => 0,
+				'category_name'    => $category_name,
+				'orderby'          => 'post_date',
+				'order'            => 'DESC',
+				'post_status'      => 'publish',
+				);
+			$category_posts = get_posts( $args );
+
+			if (sizeof( $category_posts ) > 0) {
+			   set_query_var( 'category_name', $category_name );
+			   foreach ( $category_posts as $post ) : setup_postdata( $post ); ?>
+			   	<div class="grid">
+				     <?php get_template_part( 'content', 'stream' ); ?>
+				</div><!-- .grid -->
+			<?php endforeach;
+			}
+
+			wp_reset_postdata();
+		?>
 
 	<?php if ( $child_pages->have_posts() ) : ?>
 

@@ -44,3 +44,11 @@
 .page-content a:not([class^="button"]) {
     border-bottom: 0;
 }
+
+/*---------------------------------------
+ Stream
+---------------------------------------*/
+
+.stream-title {
+    font-size: 1.2em;
+}
