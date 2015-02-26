@@ -34,7 +34,7 @@
 <?php wp_footer(); ?>
 
 <?php if ( current_user_can('edit_themes') ) {
-      echo '<!-- Template file: ' . basename( get_page_template() ) . ' -->';
+      echo '<!-- Template file: ' . get_page_template() . ' (approximate) -->';
 } ?>
 
 </body>
