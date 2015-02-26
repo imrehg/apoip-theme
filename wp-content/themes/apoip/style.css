@@ -22,7 +22,7 @@
  Hero changes
 ---------------------------------------*/
 .hero.with-featured-image {
-    background: white;
+    background-color: white;
 }
 
 .hero.without-featured-image {
