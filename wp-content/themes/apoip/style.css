@@ -8,3 +8,39 @@
  Tags:         light, responsive
  Text Domain:  apoip
 */
+
+
+/*---------------------------------------
+ Byline changes
+---------------------------------------*/
+.single .byline,
+.group-blog .byline {
+    display: none;
+}
+
+/*---------------------------------------
+ Hero changes
+---------------------------------------*/
+.hero.with-featured-image {
+    background: white;
+}
+
+.hero.without-featured-image {
+    background: #a1410e;
+}
+
+.hero.without-featured-image h1.page-title {
+    color: white;
+}
+
+.home .hero h1.page-title {
+    display: none;
+}
+
+/*---------------------------------------
+ Share button style changes
+---------------------------------------*/
+.entry-content a:not([class^="button"]),
+.page-content a:not([class^="button"]) {
+    border-bottom: 0;
+}
