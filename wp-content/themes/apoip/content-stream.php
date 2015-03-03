@@ -9,7 +9,7 @@
 <?php $category = get_term_by('name', $category_name, 'category') ?>
 <h1 class="stream-title"><a href="<?php echo get_category_link( $category ); ?> ">Latest <?php echo $category_name ?></a></h1>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<a href="<?php the_permalink(); ?>">
+	<a href="<?php the_permalink(); ?>" class="post-thumbnail">
 	<?php if ( has_post_thumbnail() ) {
 	      the_post_thumbnail();
 	     } else {
