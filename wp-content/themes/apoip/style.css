@@ -37,6 +37,15 @@
     display: none;
 }
 
+/* Outline from http://stackoverflow.com/a/4919231 */
+.hero.with-featured-image .page-title {
+    color: white;
+    text-shadow: -1px -1px 0 #555,
+                  1px -1px 0 #555,
+                 -1px 1px 0 #555,
+                  1px 1px 0 #555;
+}
+
 /*---------------------------------------
  Share button style changes
 ---------------------------------------*/
