@@ -50,7 +50,7 @@ get_header(); ?>
 		<div class="grid-wrapper clear">
 
 		<?php
-			$category_slug = 'innovations';
+			$category_slug = 'summit-news';
 
 			$args = array(
 				'posts_per_page'   => 1,
