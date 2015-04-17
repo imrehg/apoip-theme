@@ -50,12 +50,12 @@ get_header(); ?>
 		<div class="grid-wrapper clear">
 
 		<?php
-			$category_name = 'Innovations';
+			$category_slug = 'innovations';
 
 			$args = array(
 				'posts_per_page'   => 1,
 				'offset'           => 0,
-				'category_name'    => $category_name,
+				'category_name'    => $category_slug,
 				'orderby'          => 'post_date',
 				'order'            => 'DESC',
 				'post_status'      => 'publish',
@@ -63,7 +63,7 @@ get_header(); ?>
 			$category_posts = get_posts( $args );
 
 			if (sizeof( $category_posts ) > 0) {
-			   set_query_var( 'category_name', $category_name );
+			   set_query_var( 'category_slug', $category_slug );
 			   foreach ( $category_posts as $post ) : setup_postdata( $post ); ?>
 			   	<div class="grid">
 				     <?php get_template_part( 'content', 'stream' ); ?>
@@ -75,12 +75,12 @@ get_header(); ?>
 		?>
 
 		<?php
-			$category_name = 'News';
+			$category_slug = 'news';
 
 			$args = array(
 				'posts_per_page'   => 1,
 				'offset'           => 0,
-				'category_name'    => $category_name,
+				'category_name'    => $category_slug,
 				'orderby'          => 'post_date',
 				'order'            => 'DESC',
 				'post_status'      => 'publish',
@@ -88,7 +88,7 @@ get_header(); ?>
 			$category_posts = get_posts( $args );
 
 			if (sizeof( $category_posts ) > 0) {
-			   set_query_var( 'category_name', $category_name );
+			   set_query_var( 'category_slug', $category_slug );
 			   foreach ( $category_posts as $post ) : setup_postdata( $post ); ?>
 			   	<div class="grid">
 				     <?php get_template_part( 'content', 'stream' ); ?>
