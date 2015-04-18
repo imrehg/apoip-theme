@@ -33,7 +33,8 @@
     color: white;
 }
 
-.home .hero h1.page-title {
+.home .hero h1.page-title,
+.page-id-556 h1.page-title, {
     display: none;
 }
 
