@@ -73,5 +73,5 @@
 
 /* Summit Animated Gif */
 body.page-id-6 div.hero.with-featured-image{
-    background-image: 'images/Summit2015_Banner_Animated.gif' !important;
+    background-image: url('images/Summit2015_Banner_Animated.gif') !important;
 }
