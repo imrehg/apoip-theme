@@ -70,3 +70,8 @@
 .header-image {
     margin-bottom: 10px;
 }
+
+/* Summit Animated Gif */
+body.page-id-6 div.hero.with-featured-image{
+    background-image: 'images/Summit2015_Banner_Animated.gif';
+}
